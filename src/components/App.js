@@ -6,6 +6,7 @@ import Landing from "./Landing";
 import About from "./About";
 import Services from "./Services";
 
+import "../styles/main.scss"
 import {Route} from 'react-router-dom'
 
 function App() {
