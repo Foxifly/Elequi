@@ -65,9 +65,7 @@ class Nav extends Component {
 
 
         <div className="button-container">
-          <NavLink className="nav-item-quote" to="/quote" exact>
-            Get Quote
-          </NavLink>
+          <button className="quote-button">Get Quote</button>
         </div>
       </nav>
     );
