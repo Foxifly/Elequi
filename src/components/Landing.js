@@ -1,16 +1,12 @@
-import React, {Component} from 'react';
-import "../styles/landing.scss"
+import React, { Component } from "react";
+import "../styles/landing.scss";
+import Slider from "./LandingModules/Slider"
 
 class Landing extends Component {
-  render(){
-    return(
-      <div className="landing-container">
-        <div className=""></div>
-        <div className="graphic"></div>
-        <div className=""></div>
 
-      </div>
-    )
+  render() {
+    return(<Slider/>)
+
   }
 }
 

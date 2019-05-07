@@ -1,0 +1,43 @@
+
+$grayWhite: #E7E8EC;
+$ltWhite: #F2F3F5;
+$green: #8EC04F;
+$drkGreen: #71993f;
+$gray: #383F45;
+
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Teko|Ubuntu+Condensed');
+/*
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-family: 'Teko', sans-serif;
+*/
+
+
+
+.slide-text {
+  padding:0;
+  margin:0;
+  color: $grayWhite
+}
+
+.pause-play-icons,
+.step-icons {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  outline: 0;
+}
+
+.step-icons {
+  font-size: 48px;
+}
+
+.slider-button-control {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 3px;
+}

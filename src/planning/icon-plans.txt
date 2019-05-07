@@ -1,0 +1,8 @@
+touch_app = Mobile friendly (material)
+accessibility_new = accessibility  (material)
+lock or security = secure (material)
+code = built just for you (material)
+
+
+pause-circle
+play-circle
