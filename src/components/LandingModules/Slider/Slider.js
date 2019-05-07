@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import '../../styles/landing/slider.scss'
+import '../../../styles/landing/slider.scss'
 
 import {
   FaPlayCircle,
@@ -11,6 +11,10 @@ import {
   FaGgCircle
 } from "react-icons/fa";
 import { IoIosRadioButtonOff, IoIosRadioButtonOn } from "react-icons/io";
+import SlideOne from "./SlideOne"
+import SlideTwo from "./SlideTwo"
+import SlideThree from "./SlideThree"
+import SlideFour from "./SlideFour"
 
 class Slider extends Component {
   state = {
@@ -75,6 +79,33 @@ class Slider extends Component {
     });
   };
 
+  goBack = () => {
+
+    this.setState(oldState => {
+      const oldStateButton = oldState.currentButton;
+      if (oldStateButton !== 1) {
+        return { currentButton: Number(oldStateButton) - 1 };
+      }
+
+      if (oldStateButton === 1) {
+        return { currentButton: 4 };
+      }
+    });
+
+  }
+  goForward = () => {
+    this.setState(oldState => {
+      const oldStateButton = oldState.currentButton;
+      if (oldStateButton !== 4) {
+        return { currentButton: Number(oldStateButton) + 1 };
+      }
+
+      if (oldStateButton === 4) {
+        return { currentButton: 1 };
+      }
+    });
+  }
+
   render() {
     const { currentButton, isPaused } = this.state;
 
@@ -82,31 +113,19 @@ class Slider extends Component {
       <div className="slider-container">
         <div className="slideshow">
           {currentButton === 1 && (
-            <div className="slide-one">
-              <p className="slide-text">Elequi - Web design services</p>
-            </div>
+            <SlideOne/>
           )}
 
           {currentButton === 2 && (
-            <div className="slide-two">
-              <p className="slide-text">Custom designs for your business</p>
-            </div>
+            <SlideTwo/>
           )}
 
           {currentButton === 3 && (
-            <div className="slide-three">
-              <p className="slide-text">
-                Roll out your red carpet with hosting plans available
-              </p>
-            </div>
+            <SlideThree/>
           )}
 
           {currentButton === 4 && (
-            <div className="slide-four">
-              <p className="slide-text">
-                Website transformations and from-scratch
-              </p>
-            </div>
+            <SlideFour/>
           )}
 
 
@@ -174,17 +193,17 @@ class Slider extends Component {
             </div>
 
             <div className="step-icon-back">
-            <button className="step-icons">
+            <button onClick={() => this.goBack()} className="step-icons">
               <FaStepBackward />
             </button>
             </div>
 
             <div className="step-icon-forward">
-            <button className="step-icons">
+            <button onClick={() => this.goForward()} className="step-icons">
               <FaStepForward />
             </button>
             </div>
-        
+
         </div>
       </div>
     );

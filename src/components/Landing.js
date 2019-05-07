@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../styles/landing.scss";
-import Slider from "./LandingModules/Slider"
+import Slider from "./LandingModules/Slider/Slider"
 
 class Landing extends Component {
 
