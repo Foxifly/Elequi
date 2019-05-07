@@ -79,7 +79,7 @@ class Slider extends Component {
     const { currentButton, isPaused } = this.state;
 
     return (
-      <div className="landing-container">
+      <div className="slider-container">
         <div className="slideshow">
           {currentButton === 1 && (
             <div className="slide-one">
@@ -109,7 +109,8 @@ class Slider extends Component {
             </div>
           )}
 
-          <div className="button-container">
+
+          <div className="bottom-button-container">
             <button
               className="slider-button-control"
               onClick={() => this.changeSlide(1)}
@@ -150,6 +151,9 @@ class Slider extends Component {
                 <IoIosRadioButtonOff />
               )}
             </button>
+            </div>
+
+            <div className="pause-play-container">
 
             {isPaused === false && (
               <button
@@ -167,14 +171,20 @@ class Slider extends Component {
                 <FaPlayCircle />
               </button>
             )}
+            </div>
 
+            <div className="step-icon-back">
             <button className="step-icons">
               <FaStepBackward />
             </button>
+            </div>
+
+            <div className="step-icon-forward">
             <button className="step-icons">
               <FaStepForward />
             </button>
-          </div>
+            </div>
+        
         </div>
       </div>
     );

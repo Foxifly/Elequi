@@ -1,24 +1,40 @@
-
 $grayWhite: #E7E8EC;
 $ltWhite: #F2F3F5;
 $green: #8EC04F;
 $drkGreen: #71993f;
 $gray: #383F45;
-
-
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Teko|Ubuntu+Condensed');
 /*
 font-family: 'Fjalla One', sans-serif;
 font-family: 'Ubuntu Condensed', sans-serif;
 font-family: 'Teko', sans-serif;
 */
+.slider-container {
+  background-color: $gray;
+  width: 100%;
+  height: 400px;
+}
 
+.slideshow {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  grid-template-areas: '. slide slide .' 'goback slide slide goforward' 'goback bottombuttons pauseplay image';
+}
 
+.slide-four,
+.slide-one,
+.slide-three,
+.slide-two {
+  width:100%;
+  grid-area: slide;
+}
 
 .slide-text {
-  padding:0;
-  margin:0;
-  color: $grayWhite
+  padding: 0;
+  margin: 0;
+  color: $grayWhite;
+  grid-area: text;
 }
 
 .pause-play-icons,
@@ -27,11 +43,29 @@ font-family: 'Teko', sans-serif;
   border: none;
   color: white;
   font-size: 24px;
-  outline: 0;
+  outline: 0!important;
 }
-
 .step-icons {
   font-size: 48px;
+}
+
+.pause-play-container {
+  grid-area: pauseplay;
+  align-self: center;
+}
+.step-icon-back {
+  grid-area: goback;
+}
+
+.step-icon-forward {
+  grid-area: goforward;
+  justify-self: flex-end;
+}
+
+.bottom-button-container {
+  grid-area: bottombuttons;
+  justify-self: flex-end;
+  align-self: center;
 }
 
 .slider-button-control {
@@ -40,4 +74,5 @@ font-family: 'Teko', sans-serif;
   color: white;
   font-size: 18px;
   padding: 3px;
+  outline:0
 }
