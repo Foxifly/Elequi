@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
-import '../../../styles/landing/slider.scss'
+import "../../../styles/landing/slideglobal.scss"
+import "../../../styles/landing/slider.scss";
 
 import {
   FaPlayCircle,
@@ -11,10 +12,10 @@ import {
   FaGgCircle
 } from "react-icons/fa";
 import { IoIosRadioButtonOff, IoIosRadioButtonOn } from "react-icons/io";
-import SlideOne from "./SlideOne"
-import SlideTwo from "./SlideTwo"
-import SlideThree from "./SlideThree"
-import SlideFour from "./SlideFour"
+import SlideOne from "./SlideOne";
+import SlideTwo from "./SlideTwo";
+import SlideThree from "./SlideThree";
+import SlideFour from "./SlideFour";
 
 class Slider extends Component {
   state = {
@@ -80,7 +81,6 @@ class Slider extends Component {
   };
 
   goBack = () => {
-
     this.setState(oldState => {
       const oldStateButton = oldState.currentButton;
       if (oldStateButton !== 1) {
@@ -91,8 +91,7 @@ class Slider extends Component {
         return { currentButton: 4 };
       }
     });
-
-  }
+  };
   goForward = () => {
     this.setState(oldState => {
       const oldStateButton = oldState.currentButton;
@@ -104,7 +103,7 @@ class Slider extends Component {
         return { currentButton: 1 };
       }
     });
-  }
+  };
 
   render() {
     const { currentButton, isPaused } = this.state;
@@ -112,22 +111,13 @@ class Slider extends Component {
     return (
       <div className="slider-container">
         <div className="slideshow">
-          {currentButton === 1 && (
-            <SlideOne/>
-          )}
+          {currentButton === 1 && <SlideOne />}
 
-          {currentButton === 2 && (
-            <SlideTwo/>
-          )}
+          {currentButton === 2 && <SlideTwo />}
 
-          {currentButton === 3 && (
-            <SlideThree/>
-          )}
+          {currentButton === 3 && <SlideThree />}
 
-          {currentButton === 4 && (
-            <SlideFour/>
-          )}
-
+          {currentButton === 4 && <SlideFour />}
 
           <div className="bottom-button-container">
             <button
@@ -170,10 +160,9 @@ class Slider extends Component {
                 <IoIosRadioButtonOff />
               )}
             </button>
-            </div>
+          </div>
 
-            <div className="pause-play-container">
-
+          <div className="pause-play-container">
             {isPaused === false && (
               <button
                 className="pause-play-icons"
@@ -190,20 +179,19 @@ class Slider extends Component {
                 <FaPlayCircle />
               </button>
             )}
-            </div>
+          </div>
 
-            <div className="step-icon-back">
+          <div className="step-icon-back">
             <button onClick={() => this.goBack()} className="step-icons">
               <FaStepBackward />
             </button>
-            </div>
+          </div>
 
-            <div className="step-icon-forward">
+          <div className="step-icon-forward">
             <button onClick={() => this.goForward()} className="step-icons">
               <FaStepForward />
             </button>
-            </div>
-
+          </div>
         </div>
       </div>
     );

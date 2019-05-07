@@ -1,0 +1,25 @@
+.slide-two {
+  width:100%;
+  height:100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  ". . ."
+  "twoicon twotext twotext"
+  "twoicon twobutton .";
+}
+.slide-two-icon-container {
+  grid-area: twoicon;
+  justify-self: center;
+  align-self: center;
+  bottom:0
+}
+.slide-two-text-container {
+  grid-area: twotext;
+  align-self: center;
+}
+
+.slide-two-action-container {
+  grid-area: twobutton;
+  justify-self: center;
+}
