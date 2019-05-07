@@ -1,1 +1,51 @@
+.slide-three {
+  width:100%;
+  height:100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  ". . ."
+  "threeicon threetext threetext"
+  "threeicon threebutton .";
+}
+.slide-three-icon-container {
+  grid-area: threeicon;
+  justify-self: center;
+  align-self: center;
+  bottom:0
+}
+.slide-three-text-container {
+  grid-area: threetext;
+  align-self: center;
+}
 
+.slide-three-action-container {
+  grid-area: threebutton;
+  justify-self: center;
+}
+
+.slide-three {
+  width:100%;
+  height:100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  ". . ."
+  "threetext threetext threeicon"
+  "threebutton . threeicon";
+}
+.slide-three-icon-container {
+  grid-area: threeicon;
+  justify-self: center;
+  align-self: center;
+  bottom:0
+}
+.slide-three-text-container {
+  grid-area: threetext;
+  align-self: center;
+}
+
+.slide-three-action-container {
+  grid-area: threebutton;
+  justify-self: center;
+}

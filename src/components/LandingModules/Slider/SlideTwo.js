@@ -6,6 +6,7 @@ class SlideTwo extends Component {
   render() {
     return (
       <div className="slide-two">
+
         <div className="slide-two-icon-container">
 
           <div className="slide-two-icon">
