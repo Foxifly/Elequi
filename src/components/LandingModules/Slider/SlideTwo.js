@@ -16,7 +16,11 @@ class SlideTwo extends Component {
         </div>
 
         <div className="slide-two-text-container">
-        <p className="slide-text">Custom and scalable designs built with your business in mind.</p>
+        <h1 className="slide-text">Custom and scalable designs built with your business in mind.
+        </h1>
+        <p className="slide-sub-text">
+        We want to make sure that we are a good match. Give us a try to meet your business needs. Request a FREE quote today and get up to $50 off your first website!
+        </p>
         </div>
 
         <div className="slide-two-action-container">

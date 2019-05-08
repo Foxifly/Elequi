@@ -3,18 +3,23 @@ $ltWhite: #F2F3F5;
 $green: #8EC04F;
 $drkGreen: #71993f;
 $gray: #383F45;
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Teko|Ubuntu+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Teko|Ubuntu+Condensed|Ubuntu');
 /*
 font-family: 'Fjalla One', sans-serif;
 font-family: 'Ubuntu Condensed', sans-serif;
 font-family: 'Teko', sans-serif;
 */
 .slide-text {
-  font-size: 32px;
+  font-size: 48px;
   color: $ltWhite;
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 
+.slide-sub-text {
+  font-size: 18px;
+  color: $grayWhite;
+  font-family: 'Ubuntu', sans-serif;
+}
 
 .action-button {
   background-color: $green;
