@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "../../../styles/landing/slideglobal.scss"
+import "../../../styles/landing/slideglobal.scss";
 import "../../../styles/landing/slider.scss";
 
 import {
@@ -54,8 +54,13 @@ class Slider extends Component {
     const { currentButton } = this.state;
 
     if (toSlide !== currentButton) {
+      clearInterval(this.state.interval);
+      let slideInterval = setInterval(() => {
+        this.autoSlide();
+      }, 10000);
       this.setState({
-        currentButton: toSlide
+        currentButton: toSlide,
+        interval: slideInterval
       });
     }
   };
