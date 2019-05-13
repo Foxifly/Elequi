@@ -15,8 +15,13 @@ class SlideOne extends Component {
       </div>
 
       <div className="slide-three-text-container">
+
         <p className="slide-text">
-          Elequi offers several services including web development, web hosting, and more.
+        We've Got You Covered
+        </p>
+
+        <p className="slide-sub-text">
+        Elequi offers a wide range of services including web development, web hosting, and more. Contact us today to find out what we can do for you and your business.  
         </p>
         </div>
 
