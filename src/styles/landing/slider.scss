@@ -12,7 +12,7 @@ font-family: 'Teko', sans-serif;
 .slider-container {
   background-color: $gray;
   width: 100%;
-  height: 400px;
+  height: 350px;
 }
 
 .slideshow {
@@ -38,7 +38,6 @@ font-family: 'Teko', sans-serif;
 .slide-text {
   padding: 0;
   margin: 0;
-  color: $grayWhite;
   grid-area: text;
   margin-top:10px;
 }

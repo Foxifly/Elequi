@@ -1,4 +1,5 @@
 $grayWhite: #E7E8EC;
+$drkrGray: #cfd0d4;
 $ltWhite: #F2F3F5;
 $green: #8EC04F;
 $drkGreen: #71993f;
@@ -11,9 +12,10 @@ font-family: 'Teko', sans-serif;
 */
 .slide-text, .slide-text-main {
   font-size: 48px;
-  color: $ltWhite;
+  color: $drkrGray;
   font-family: 'Ubuntu Condensed', sans-serif;
 }
+
 
 .slide-sub-text {
   font-size: 18px;

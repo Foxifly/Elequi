@@ -5,8 +5,8 @@ import "../../../styles/landing/slider.scss";
 
 import {
   FaPlayCircle,
-  FaStepForward,
-  FaStepBackward,
+  FaAngleLeft,
+  FaAngleRight,
   FaPauseCircle,
   FaCircle,
   FaGgCircle
@@ -188,13 +188,13 @@ class Slider extends Component {
 
           <div className="step-icon-back">
             <button onClick={() => this.goBack()} className="step-icons">
-              <FaStepBackward />
+              <FaAngleLeft />
             </button>
           </div>
 
           <div className="step-icon-forward">
             <button onClick={() => this.goForward()} className="step-icons">
-              <FaStepForward />
+              <FaAngleRight />
             </button>
           </div>
         </div>
