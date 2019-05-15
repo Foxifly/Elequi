@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../../../styles/landing/slidetwo.scss";
-import { MdComputer, MdSmartphone, MdPhoneIphone } from "react-icons/md";
+import { MdComputer } from "react-icons/md";
 
 class SlideTwo extends Component {
   render() {

@@ -7,9 +7,7 @@ import {
   FaPlayCircle,
   FaAngleLeft,
   FaAngleRight,
-  FaPauseCircle,
-  FaCircle,
-  FaGgCircle
+  FaPauseCircle
 } from "react-icons/fa";
 import { IoIosRadioButtonOff, IoIosRadioButtonOn } from "react-icons/io";
 import SlideOne from "./SlideOne";
