@@ -1,0 +1,44 @@
+$grayWhite: #E7E8EC;
+$ltWhite: #F2F3F5;
+$green: #8EC04F;
+$drkGreen: #71993f;
+$gray: #383F45;
+@import url('https://fonts.googleapis.com/css?family=Abel');
+/*
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-family: 'Teko', sans-serif;
+*/
+
+.title-underline {
+  margin: 0 auto;
+  width: 15%;
+  height: 4px;
+  border-radius: 100px;
+  background-color: $green;
+
+}
+
+
+.about-module-container {
+  width: 55%;
+  margin:0 auto;
+  background-color: white;
+  height: calc(50vh - 50px);
+}
+
+.about-module-title {
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 32px;
+  margin: 0;
+  padding-top: 10px;
+}
+.about-module-text {
+  text-align: justify;
+  font-family: 'Abel', sans-serif;
+  color: $gray;
+  font-size: 18px;
+}

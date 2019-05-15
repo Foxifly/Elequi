@@ -1,0 +1,60 @@
+$grayWhite: #E7E8EC;
+$ltWhite: #F2F3F5;
+$green: #8EC04F;
+$drkGreen: #71993f;
+$gray: #383F45;
+@import url('https://fonts.googleapis.com/css?family=Teko|Abel');
+/*@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Teko|Ubuntu+Condensed|Ubuntu');
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-family: 'Teko', sans-serif;
+*/
+.features-module-container {
+  width: 100%;
+  background-color: $grayWhite;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.features-sub-module {
+  display: grid;
+  background-color: white;
+  width: 25%;
+  height: 100%;
+  margin: 20px;
+  padding: 20px 20px 20px 0;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-areas: 'Micon Mtitle Mtitle' 'Micon Mtext Mtext';
+  border-radius: 6px;
+  transition: ease-in-out 0.1s;
+}
+
+.features-sub-module:hover {
+  background-color: #f7f7f9;
+  cursor: default;
+}
+
+.features-sub-module-text {
+  font-family: 'Abel', 'sans-serif';
+  grid-area: Mtext;
+  padding: 0;
+  margin: 0;
+}
+
+.features-sub-module-title {
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  grid-area: Mtitle;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.features-sub-module-icon {
+  grid-area: Micon;
+  justify-self: center;
+  align-self: center;
+}
