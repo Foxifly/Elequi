@@ -3,6 +3,7 @@ import "../styles/landing.scss";
 import Slider from "./LandingModules/Slider/Slider";
 import AboutModule from "./LandingModules/AboutModule";
 import FeaturesModule from "./LandingModules/FeaturesModule";
+import SpecificationModule from "./LandingModules/SpecificationModule";
 
 class Landing extends Component {
   render() {
@@ -11,6 +12,7 @@ class Landing extends Component {
         <Slider />
         <AboutModule />
         <FeaturesModule/>
+        <SpecificationModule/>
       </div>
     );
   }
