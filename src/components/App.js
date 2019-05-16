@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from "./Nav"
+import Footer from "./Footer"
 import Quote from "./Quote";
 import Contact from "./Contact";
 import Landing from "./Landing";
@@ -20,7 +21,7 @@ function App() {
         <Route exact path="/quote" component={Quote} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/404" component={Quote} />
-
+        <Footer/>
 
       </header>
 

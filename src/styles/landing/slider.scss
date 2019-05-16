@@ -3,7 +3,7 @@ $ltWhite: #F2F3F5;
 $green: #8EC04F;
 $drkGreen: #71993f;
 $gray: #383F45;
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Teko|Ubuntu+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Teko|Ubuntu+Condensed|Abel');
 /*
 font-family: 'Fjalla One', sans-serif;
 font-family: 'Ubuntu Condensed', sans-serif;
@@ -15,23 +15,48 @@ font-family: 'Teko', sans-serif;
   height: 400px;
 }
 
+.spec-container {}
+
+.spec-module {
+  width: 55%;
+  margin: 0 auto;
+  font-family: 'Abel', sans-serif;
+}
+
+.spec-do-dont-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+li,
+ul {
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+
+.do-dont-title {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
 .slideshow {
   overflow: hidden;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 4fr 4fr 1fr;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: '. slide slide .'
-  'goback slide slide goforward'
-  '. bottombuttons pauseplay image';
+  grid-template-areas: '. slide slide .' 'goback slide slide goforward' '. bottombuttons pauseplay image';
 }
 
 .slide-four,
 .slide-one,
 .slide-three,
 .slide-two {
-  width:100%;
+  width: 100%;
   grid-area: slide;
 }
 
@@ -39,7 +64,7 @@ font-family: 'Teko', sans-serif;
   padding: 0;
   margin: 0;
   grid-area: text;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 .pause-play-icons,
@@ -49,8 +74,9 @@ font-family: 'Teko', sans-serif;
   color: white;
   font-size: 24px;
   outline: 0!important;
-  cursor:pointer;
+  cursor: pointer;
 }
+
 .step-icons {
   font-size: 48px;
 }
@@ -59,6 +85,7 @@ font-family: 'Teko', sans-serif;
   grid-area: pauseplay;
   align-self: center;
 }
+
 .step-icon-back {
   grid-area: goback;
   justify-self: center;
@@ -68,7 +95,7 @@ font-family: 'Teko', sans-serif;
 .step-icon-forward {
   grid-area: goforward;
   justify-self: center;
-align-self: flex-start;
+  align-self: flex-start;
 }
 
 .bottom-button-container {
@@ -83,6 +110,11 @@ align-self: flex-start;
   color: white;
   font-size: 18px;
   padding: 3px;
-  outline:0;
+  outline: 0;
   cursor: pointer;
+}
+
+.spec-module-do,
+.spec-module-dont {
+  width: 50%;
 }
