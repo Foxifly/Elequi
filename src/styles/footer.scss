@@ -1,0 +1,24 @@
+$grayWhite: #E7E8EC;
+$ltWhite: #F2F3F5;
+$green: #8EC04F;
+$drkGreen: #71993f;
+$gray: #383F45;
+$drkrGray: #cfd0d4;
+
+.footer-container {
+  width: 100%;
+  background-color: $grayWhite;
+  padding: 10px 0;
+}
+
+.mailing-list-container {
+  background-color: rgba(0,0,0,0.2);
+  width: 20%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.join-mailing-list {
+  padding: 0;
+  margin: 0;
+}

@@ -9,8 +9,6 @@ font-family: 'Fjalla One', sans-serif;
 font-family: 'Ubuntu Condensed', sans-serif;
 font-family: 'Teko', sans-serif;
 */
-
-
 .spec-module-title {
   text-align: center;
   font-family: 'Teko', sans-serif;
@@ -27,5 +25,27 @@ font-family: 'Teko', sans-serif;
   height: 4px;
   border-radius: 100px;
   background-color: $green;
+}
 
+.spec-how-its-done {
+  width: 100%;
+  text-align: center;
+}
+
+.do-dont-title {
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.languages {
+  font-family: 'Abel', sans-serif;
+  margin-top: 0;
+}
+
+.spec-how-its-done {
+  svg {
+    padding: 0 5px;
+  }
 }
