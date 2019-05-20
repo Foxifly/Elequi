@@ -20,11 +20,11 @@ class Footer extends Component {
         <div className="mailing-list-container">
           <form className="mailing-list-form">
             <h4 className="join-mailing-list">Join our Mailing List!</h4>
-            <label for="name">Name</label>
+            <label htmlFor="name">Name</label>
             <br />
             <input id="name" />
             <br />
-            <label for="email">E-Mail Address</label>
+            <label htmlFor="email">E-Mail Address</label>
             <br />
             <input id="email" />
           </form>
